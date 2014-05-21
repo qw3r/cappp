@@ -11,7 +11,7 @@ nginx::resource::upstream { 'sinatra':
     '127.0.0.1:9292',
   ],
 }
-nginx::resource::vhost { 'cappp.dev':
+nginx::resource::vhost { 'cappp.lvh.me':
   ensure   => present,
   proxy  => 'http://sinatra',
 }
