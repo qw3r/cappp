@@ -2,13 +2,13 @@
 lock '3.2.1'
 
 set :application, 'cappp'
-set :repo_url, 'git@github.com/qw3r/cappp.git'
+set :repo_url, 'git@github.com:qw3r/cappp.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/cappper/app/releases'
+set :deploy_to, '/home/cappper/app'
 
 # Default value for :scm is :git
 # set :scm, :git
