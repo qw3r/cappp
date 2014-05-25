@@ -54,7 +54,7 @@ namespace :deploy do
   desc 'Stop application'
   task :stop do
     on roles(:app), in: :sequence, wait: 5 do
-      execute :bundle, :exec, "killall -9 ruby"
+      execute :killall, "-9 ruby"
     end
   end
 
